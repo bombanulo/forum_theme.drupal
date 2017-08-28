@@ -1,0 +1,126 @@
+// _blocks.default.sass
+//
+// Place all default block styles here.
+// Individual block styles are saved as their own files in the format of
+//  - Example: _blocks.block-id.sass
+@import "neat"
+
+
+// nav ul 
+//   list-style: none
+//   width: 100%
+//   margin: 0
+//   padding: 0
+//   //display: none
+//   li 
+//     text-align: left
+//     border-bottom: 1px solid Wheat
+//     a 
+//       color: LemonChiffon
+//       text-decoration: none
+//       display: block
+//       &:hover 
+//         background-color: Chocolate
+
+//       &:focus 
+//         outline: thin dotted
+//         outline-offset: -2px
+    
+
+
+// @media screen and(min-width: 960px) 
+//   a.menu-trigger 
+//     display: none
+
+//   .nav ul 
+//     display: block
+//     li 
+//       display: table-cell
+//       text-align: center
+//       border-left: 1px dotted Wheat
+      
+//горекод...
+a.menu-trigger
+  display: none
+  &:hover  /*решаем проблему со скликиванием*/
+    display: block
+nav
+  ul  
+    list-style: none
+    
+
+    li
+      float: right
+      padding: 0 
+      padding-left: 1.6rem 
+      padding-bottom: 1rem 
+      list-style: none
+      text-align: center
+      //background: #16C682
+      &:last-child
+        padding-left: 0rem
+
+      a 
+        display: block
+        //max-width: 20rem 
+        //min-width: 15rem 
+        font-size: 1.7rem 
+        line-height: 2rem
+        padding: 0
+        margin: 0  
+        padding: 0.6rem 0.6rem
+        font-family: 'Russo One', sans-serif
+        text-decoration: none
+        color: #423F38 !important
+        //фон
+        background: #FFFFFF
+        -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset
+        //  верхнего, правого, нижнего и левого края
+        //transition: background-color 2s none
+
+
+        &::before
+          font-family: 'FontAwesome'
+          font-size: 1.2em
+          position: relative 
+          top: 0.1em 
+          //color: rgb(109, 128, 39)
+          color: #717D22 
+          margin-right: 0.25em
+          
+        &:hover,
+        &:active
+          text-decoration: none
+          // /background: #003319 
+          color: #000000 !important
+          box-shadow: 1px -1px 10px rgba(255, 255, 255, 1.0), 0 0 40px rgba(255, 255, 255, 1.0) inset
+          transition: all 0.3s
+
+//ссылка на домашнюю страницу для мобильного меню
+nav
+  .menu-mlid-238
+    display: none
+    @media screen and (max-width: 720px)
+      display: block 
+    
+
+// хоть какое то выпадающее меню    
+nav ul li ul
+  display: none
+  position: absolute
+  @media screen and (max-width: 720px)
+    position: relative
+  
+nav ul li:hover ul
+  display: block
+
+nav ul li ul li
+  z-index: 1000 
+  position: relative
+  float: none 
+  background: #A9A9A9 
+  margin: 0px 0
+  padding: 0 
+      

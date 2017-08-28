@@ -1,0 +1,110 @@
+//colors
+$color_cruise_approx: #AAB798
+$white: white
+$color_cocoa_brown_approx: $color_cruise_approx*0.5
+$color_golden_glow_approx: $color_cruise_approx *1.2
+
+//fonts
+$font_0: Lucida Sans Unicode
+$font_1: Lucida Grande
+$font_2: Sans-Serif
+
+//@extend-elements
+//original selectors
+//th, td
+.extend_1 
+  border-style: solid
+  border-width: 0px 1px 1px 0px
+  border-color: $white
+
+.extend_2 
+  border-style: solid
+  border-width: 1px 1px 1px 1px
+  border-color: $color_cruise_approx*0.5
+
+
+//обычная таблица
+table
+  max-width: 100%
+  overflow: auto 
+  font-size: 0.8em
+  border-spacing: 0
+  p
+    margin: 0
+    padding: 0 
+
+  th 
+    padding: 5px 5px
+    @extend .extend_2
+
+  td 
+    @extend .extend_2
+    padding: 5px 5px
+    background: #F4F5F4
+
+  tr 
+
+
+
+//таблица в контейнере вариант 1
+.tablecontainer
+  overflow: auto
+  table.tblvar1 
+    max-width: 100%
+    overflow: hidden 
+    //min-width: 720px  
+    //font-family: $font_0, $font_1, $font_2
+    font-size: 0.8em
+    //If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+    border-radius: 10px
+    border-spacing: 0
+    text-align: center
+    p
+      margin: 0
+      padding: 0 
+
+    th 
+      background: $color_cruise_approx
+      color: $white
+      //If you use compass, instead of the line below you could use + text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+      text-shadow: 1px 1px 0px $color_cocoa_brown_approx
+      padding: 10px 20px
+      @extend .extend_1
+      &:first-child 
+        text-align: left
+        //If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+        border-top-left-radius: 10px
+
+      &:last-child 
+        //If you use compass, instead of the line below you could use + border-top-right-radius($radius)
+        border-top-right-radius: 10px
+        border-right: none
+
+
+    td 
+      @extend .extend_1
+      padding: 10px 20px
+      background: $color_golden_glow_approx
+      &:first-child 
+        text-align: left
+
+
+    tr 
+      &:last-child td 
+        &:first-child 
+          //If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+          border-radius: 0 0 0 10px
+
+        &:last-child 
+          //If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+          border-radius: 0 0 10px 0
+
+
+      td:last-child 
+        border-right: none
+        
+
+
+
+
+
