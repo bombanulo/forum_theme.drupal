@@ -1,0 +1,63 @@
+name = ForumTheme
+description = HTML5, SASS, Responsive grid base theme.
+screenshot = images/optimized/screenshot.gif
+core = "7.x"
+project = "forumtheme"
+engine = phptemplate
+
+regions[page_top] = Page top
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer] = Footer
+regions[page_bottom] = Page bottom
+regions[rootmenu] = Главное меню
+regions[navblock] = Блок под шапкой
+regions[social_block] = Блок для ссылок на соц. сети
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+;features[] = search
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+
+; Stylesheets
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/default.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+;stylesheets[all][] = css/ckeditor.contents.css
+stylesheets[print][] = css/print.css
+
+; font-awesome
+stylesheets[all][] = fonts/font-awesome/css/font-awesome.min.css
+stylesheets[all][] = system.menus.css
+stylesheets[all][] = js/all/baguetteBox.min.css
+stylesheets[all][] = css/storonniecss/flexslider.css
+stylesheets[all][] = css/storonniecss/usertabs.css
+
+
+
+; Scripts
+;scripts[] = js/build/scripts.js
+scripts[] = js/build/modernizr.js
+
+settings[basic_tabs] = 1
+settings[basic_breadcrumb] = 1
+settings[basic_breadcrumb_home] = 1
+settings[basic_breadcrumb_separator] = »
+settings[clear_registry] = 0
+settings[basic_ie_enabled] = 0
+settings[basic_ie_enabled_versions][ie8] = 0
+settings[basic_ie_enabled_versions][ie9] = 0
+
+
+

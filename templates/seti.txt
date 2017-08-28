@@ -1,0 +1,6 @@
+<ul>
+  <li ><a href="//vk.com/ydclubforum" target="_blank"><i class="fa fa-vk fa-lg"></i></a></li>
+  <li ><a href="//www.facebook.com/groups/udcforum" target="_blank"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+  <li ><a href="//www.instagram.com/forum_pskov60/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+  <li ><a href="/rss.xml"><i class="fa fa-rss-square fa-lg" target="_blank"></i></a></li>
+</ul>

@@ -1,1 +1,1 @@
-# forum_theme.drupal
+forumtheme

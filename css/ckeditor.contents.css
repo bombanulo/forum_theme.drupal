@@ -1,0 +1,123 @@
+body {
+  color: #333;
+  background-color: #FFFFFF;
+  background-image: none;
+  margin: 1rem;
+}
+
+a {
+  color: #0782c1;
+}
+a > img {
+  padding: 1px;
+  margin: 1px;
+  border: none;
+  outline: 1px solid #0782c1;
+}
+
+ol {
+  *margin-right: 0;
+  padding: 0 40px;
+}
+
+ul {
+  *margin-right: 0;
+  padding: 0 40px;
+}
+
+dl {
+  *margin-right: 0;
+  padding: 0 40px;
+}
+
+h1 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+h2 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+h3 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+h4 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+h5 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+h6 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+img.right {
+  border: 1px solid #ccc;
+  float: right;
+  margin-left: 15px;
+  padding: 5px;
+}
+img.left {
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+}
+
+.marker {
+  background-color: Yellow;
+}
+
+span[lang] {
+  font-style: italic;
+}
+
+figure {
+  text-align: center;
+  border: solid 1px #ccc;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin: 10px 20px;
+  display: inline-block;
+}
+figure > figcaption {
+  text-align: center;
+  display: block;
+}
+
+.cke_contents_ltr blockquote {
+  padding-left: 20px;
+  padding-right: 8px;
+  border-left-width: 5px;
+}
+
+.cke_contents_rtl blockquote {
+  padding-left: 8px;
+  padding-right: 20px;
+  border-right-width: 5px;
+}
+
+

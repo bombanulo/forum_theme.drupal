@@ -1,0 +1,22 @@
+.flaxfooter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.flaxfooter .row {
+  background: #FFABAB;
+}
+.flaxfooter .name {
+  padding-top: 2rem;
+  font-size: 0.8em;
+  background: #BCBCBC;
+}
+.flaxfooter #socialbittons_foter {
+  font-size: 2rem;
+}
+
+
